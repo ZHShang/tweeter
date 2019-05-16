@@ -1,3 +1,6 @@
+/*This is a helper function that calculates the amount of characters the user has inputted
+as well as making the counter dynamic, turning the counter to red if it's over 140 chars.
+*/
 $(document).ready(function(){
   $('#txt').on('input', function(){
     var totalChars = $(this).val().length;

@@ -12,7 +12,7 @@ module.exports = function makeDataHelpers(db) {
       simulateDelay(() => {
         db.collection("tweets").insertOne(newTweet, (err, result) => {
           if (err){
-            console.log("POST had an error")
+            console.log("POST had an error");
           }
         })
         callback(null, true);
