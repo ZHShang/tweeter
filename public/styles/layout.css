@@ -39,6 +39,14 @@ img.userPic{
   margin-bottom: 1px;
 }
 
+img.footerPic{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-left:3px;
+}
+
 button.compose{
   height: 50px;
   width: 90px;
