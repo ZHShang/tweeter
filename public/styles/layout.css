@@ -39,13 +39,15 @@ img.userPic{
   margin-bottom: 1px;
 }
 
-input.footerPic{
+.footerPic{
   display: inline-block;
   height: 20px;
   width: 20px;
   float: right;
   margin-left:3px;
+  opacity: 0;
 }
+
 
 button.compose{
   height: 50px;
@@ -137,10 +139,16 @@ main{
   padding: 1em;
 }
 
+
+
 .tweet{
   opacity: 0.7;
 }
 
 .tweet:hover{
+  opacity: 1;
+}
+
+.tweet:hover .footerPic{
   opacity: 1;
 }
