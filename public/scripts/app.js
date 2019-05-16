@@ -53,19 +53,18 @@ $(document).ready(function() {
 
   loadTweets();
 
+  $('#txt').on('input', function() {
+        $("div.nullError").slideUp(); //the error slides up on input
+        $("div.longError").slideUp();
+  });
+
   $("form").on("submit", function(e) {
     e.preventDefault(); //stops the button from redirecting
     var $textLen = $('#txt').val().length;
     if ($textLen === 0) {
       $("div.nullError").slideToggle("slow"); //if the text is empty
-      $('#txt').on('input',function() {
-        $("div.nullError").slideUp(); //the error slides up on input
-      });
     } else if ($textLen > 140) {
       $("div.longError").slideToggle("slow");
-      $('#txt').on('input',function() {
-        $("div.longError").slideUp();
-      });
     } else {
       $.ajax({
         url: $(this).attr("action"), //gets the /tweet link
