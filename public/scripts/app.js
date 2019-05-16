@@ -29,9 +29,9 @@ $(document).ready(function() {
         </header>
         <div class="content">${escape(tweet.content.text)}</div>
         <footer>${jQuery.timeago(tweet.created_at)}
-        <img class="footerPic" src="/images/like.png">
-        <img class="footerPic" src="/images/retweet.png">
-        <img class="footerPic" src="/images/flag.png">
+        <input type="image" class="footerPic" src="/images/like.png">
+        <input type="image" class="footerPic" src="/images/retweet.png">
+        <input type="image" class="footerPic" src="/images/flag.png">
         </footer>
       </article>
     `;
